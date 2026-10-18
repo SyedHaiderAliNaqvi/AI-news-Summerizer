@@ -1,0 +1,13 @@
+{% extends "news/base.html" %}
+
+{% block content %}
+  <h2>Choose a topic</h2>
+
+  {% for topic in topics %}
+    <div class="card">
+      <a class="topic-link" href="{% url 'topic_detail' topic.id %}">{{ topic.name }}</a>
+    </div>
+  {% empty %}
+    <p>No topics yet. Add some in the admin panel.</p>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "news/base.html" %}
+
+{% block title %}{{ topic.name }}{% endblock %}
+
+{% block content %}
+  <h2>{{ topic.name }}</h2>
+
+  <form method="post" action="{% url 'refresh_topic' topic.id %}"
+        onsubmit="this.querySelector('button').disabled = true; this.querySelector('button').textContent = 'Fetching and summarizing... please wait';">
+    {% csrf_token %}
+    <button type="submit" class="btn">Refresh news</button>
+  </form>
+  <br>
+
+  {% for article in articles %}
+    <div class="card">
+      <h3>{{ article.title }}</h3>
+      <p>{{ article.summary.text }}</p>
+      <p class="meta">
+        {{ article.source }}
+        {% if article.published_at %} · {{ article.published_at|date:"M d, Y" }}{% endif %}
+        · <a href="{{ article.url }}" target="_blank" rel="noopener">Read original</a>
+      </p>
+      <p class="meta">🤖 AI-generated summary ({{ article.summary.model_name }}) · verify with the original source</p>
+    </div>
+  {% empty %}
+    <p>No summaries yet for this topic.</p>
+  {% endfor %}
+
+  <p><a href="{% url 'home' %}">← Back to topics</a></p>
+{% endblock %}
