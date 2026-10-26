@@ -46,12 +46,9 @@ FEEDS = [
     ("Geo News", "https://www.geo.tv/rss/1/0"),
     ("Business Recorder", "https://www.brecorder.com/feeds/latest-news"),
     ("The Nation", "https://www.nation.com.pk/rss/newspaper"),
-    ("Pakistan Today", "https://www.pakistantoday.com.pk/feed"),
     ("ARY News", "https://arynews.tv/feed/"),
     ("Arab News Pakistan", "https://www.arabnews.pk/rss.xml"),
     ("ProPakistani", "https://propakistani.pk/feed/"),
-    ("BOL News", "https://www.bolnews.com/feed/"),
-    ("92 News", "https://92newshd.tv/feed"),
     ("GNN", "https://gnnhd.tv/rss/latest"),
     ("The Frontier Post", "https://thefrontierpost.com/feed/"),
     ("Hamariweb News", "https://enews.hamariweb.com/feed/"),
@@ -60,12 +57,10 @@ FEEDS = [
     ("Times of Islamabad", "https://timesofislamabad.com/rss/latest-news"),
     ("The Lahore Times", "https://www.lhrtimes.com/feed/"),
     ("Daily Patriot", "https://dailythepatriot.com/feed/"),
-    ("Daily NewsPK", "https://dailynewspk.com/feed/"),
     ("The Pakistan", "https://thepakistan.pk/feed/"),
     ("The Current", "https://thecurrent.pk/feed/"),
     ("Chitral Times", "https://chitraltimes.com/feed"),
     ("Independent News Pakistan", "https://www.inp.net.pk/inp/rss"),
-    ("PakShowbiz", "https://www.pakshowbiz.com/feed/"),
 ]
 
 # ---------- Urdu support ----------
@@ -76,13 +71,11 @@ URDU_FEEDS = [
     ("Express News (Urdu)", "https://www.express.pk/feed/"),
     ("Daily Jang", "https://feeds.feedburner.com/com/Yeor"),
     ("Daily Khabrain", "https://dailykhabrain.com.pk/feed/"),
-    ("92 News (Urdu)", "https://urdu.92newshd.tv/feed"),
     ("Aaj News", "https://www.aaj.tv/feeds/latest-news"),
     ("BOL News (Urdu)", "https://www.bolnewsurdu.com/feed/"),
     ("Daily Ummat", "https://ummat.net/feed/"),
     ("Daily Qudrat", "https://dailyqudrat.pk/feed/"),
     ("Mashriq", "https://mashriqtv.pk/feed/"),
-    ("Nai Baat", "https://naibaat.pk/feed/"),
     ("PNI (Urdu)", "https://pni.net.pk/feed/"),
 ]
 
